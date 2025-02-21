@@ -5,8 +5,6 @@ import { Button } from '@mui/material'
 import ContactCard from './ContactCard'
 import linkedInIcon from '../../assets/icons8-linkedin.svg'
 import githubIcon from '../../assets/icons8-github.svg'
-import twitterIcon from '../../assets/icons8-twitter.svg'
-import redditIcon from '../../assets/icons8-reddit.svg'
 import { useNavigate } from 'react-router-dom'
 import HireMe from './HireMe'
 
@@ -52,33 +50,32 @@ export default function Contact() {
         <h1 className="text-3xl mb-4 font-bold">{`Let's`} Connect! </h1>
         <div className="flex flex-wrap lg:flex-row gap-4 items-center justify-center ">
           <ContactCard
-            text={'in/iambijoykar'}
+            text={'in/pranaygupta'}
             icon={linkedInIcon}
-            link={`https://www.linkedin.com/in/iambijoykar/`}
+            link={'https://www.linkedin.com/in/pranay-gupta-45128721b/'}
           />
           <ContactCard
-            text={'@iamBijoyKar'}
-            icon={twitterIcon}
-            link={`https://twitter.com/iamBijoyKar`}
-          />
-          <ContactCard
-            text={'in/iambijoykar'}
-            icon={redditIcon}
-            dropShadow={`0 0 10px #dddddd55`}
-            link={`https://www.reddit.com/user/iamBijoyKar`}
-          />
-          <ContactCard
-            text={'@iamBijoyKar'}
+            text={'@iamPranayGupta'}
             icon={githubIcon}
             dropShadow={`0 0 10px #00000055`}
-            link={`https://github.com/iamBijoyKar`}
+            link={`https://github.com/pran-aeyyy`}
           />
         </div>
         <div className="w-full flex justify-center mt-4">
           <Button
-            onClick={() => navigate('/contact')}
+            onClick={() => navigate('/skills')}
             variant="outlined"
-            color="primary"
+            sx={{
+              // Initial text color
+              borderColor: '#ff5722', // Initial border color
+              backgroundColor: '#ff5722', // Ensure it's transparent initially
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: '#d84315', // Fill color on hover
+                color: '#fff', // Text color on hover\
+                borderColor: '#d84315',
+              },
+            }}
           >
             See more
           </Button>

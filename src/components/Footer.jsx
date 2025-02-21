@@ -17,25 +17,21 @@ export default function Footer() {
     >
       <div className="flex flex-col lg:flex-row items-center gap-5 justify-between w-full">
         <div className="flex flex-col justify-start w-full lg:w-fit ">
-          <h1 className="text-2xl font-bold ">Bijoy Kar</h1>
+          <h1 className="text-2xl font-bold ">Pranay Gupta</h1>
           <div className="mt-2">
             <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-              Developer
+              AI/ML Developer
             </span>{' '}
             | {` `}
             <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-              Student
+              Designer
             </span>{' '}
             | {` `}
             <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-              Leaner
-            </span>{' '}
-            | {` `}
-            <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-              Tect Enthusiast
+              Tech Enthusiast
             </span>
           </div>
-          <p className="">Bijoy Kar © Copyright 2024</p>
+          <p className="">Pranay Gupta © Copyright 2024</p>
         </div>
         <div className="flex gap-4 lg:gap-6 font-semibold justify-between w-full lg:w-fit">
           <div className="flex flex-col gap-3">
@@ -46,19 +42,13 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <Link to="/testimonials">Testimonials</Link>
-            <Link
-              to="https://blogbijoykar-iambijoykars-projects.vercel.app/"
-              target="_blank"
-            >
-              Blog
-            </Link>
             <Link to="/resume">Resume</Link>
             <Link to="/faq">FAQ</Link>
           </div>
           <div className="flex flex-col gap-3">
             <Link to="/confetti">Confetti</Link>
             <Link to="/resources">Resources</Link>
-            <Link to="https://github.com/iamBijoyKar/Portfolio" target="_blank">
+            <Link to="https://github.com/pran-aeyyy" target="_blank">
               GitHub
             </Link>
             <Link to="/copyright">Copyright</Link>
@@ -73,7 +63,7 @@ export default function Footer() {
         <Link
           target="_blank"
           className="group"
-          to="https://github.com/iamBijoyKar"
+          to="https://github.com/pran-aeyyy"
         >
           <BsGithub className="text-2xl inline-block mr-2 group-hover:text-[#000000]" />
           GitHub
@@ -81,18 +71,10 @@ export default function Footer() {
         <Link
           target="_blank"
           className="group"
-          to="https://www.linkedin.com/in/iambijoykar/"
+          to="https://www.linkedin.com/in/pranay-gupta-45128721b/"
         >
           <BsLinkedin className="text-2xl inline-block mr-2 group-hover:text-[#1565c0]" />
           LinkedIn
-        </Link>
-        <Link
-          target="_blank"
-          className="group"
-          to="https://twitter.com/iamBijoyKar"
-        >
-          <BsTwitter className="text-2xl inline-block mr-2 group-hover:text-[#1565c0]" />
-          Twitter
         </Link>
       </div>
     </footer>

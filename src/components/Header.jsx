@@ -36,63 +36,63 @@ export default function Header() {
       {confetti && <Confetti />}
       <Link to="/">
         <h1
-          className="text-xl font-bold uppercase"
+          className="text-3xl font-bold uppercase"
           style={{ color: colorTheme.primaryText }}
         >
-          Bijoy Kar
+          Pran.aeyyy
         </h1>
       </Link>
       {isHome && (
         <ul className="gap-5 items-center hidden lg:flex">
-          <li className="">
+          <li>
             <a
               href="#intro"
-              className="text-md font-semibold animate-underline "
+              className="text-xl font-bold animate-underline"
               style={{ color: colorTheme.primaryText }}
             >
               Home
             </a>
           </li>
-          <li className="">
+          <li>
             <a
               href="#about"
-              className="text-md font-semibold animate-underline"
+              className="text-xl font-bold animate-underline"
               style={{ color: colorTheme.primaryText }}
             >
               About
             </a>
           </li>
-          <li className="">
+          <li>
             <a
               href="#skills"
-              className="text-md font-semibold animate-underline"
+              className="text-xl font-bold animate-underline"
               style={{ color: colorTheme.primaryText }}
             >
               Skills
             </a>
           </li>
-          <li className="">
+          <li>
             <a
               href="#projects"
-              className="text-md font-semibold animate-underline"
+              className="text-xl font-bold animate-underline"
               style={{ color: colorTheme.primaryText }}
             >
               Projects
             </a>
           </li>
-          <li className="">
+          <li>
             <a
               href="#experience"
-              className="text-md font-semibold animate-underline"
+              className="text-xl font-bold animate-underline"
               style={{ color: colorTheme.primaryText }}
             >
               Exp
             </a>
           </li>
-          <li className="">
+          <li>
             <a
               href="#contact"
-              className="text-md font-semibold animate-underline"
+              className="text-xl font-bold animate-underline"
               style={{ color: colorTheme.primaryText }}
             >
               Contact
@@ -100,6 +100,7 @@ export default function Header() {
           </li>
         </ul>
       )}
+
       <div className="flex gap-3 items-center">
         <IconButton onClick={toggleTheme}>
           {!theme ? (
@@ -109,9 +110,19 @@ export default function Header() {
           )}
         </IconButton>
         <MyButton
-          onClick={() => navigate('/resume')}
-          variant="contained"
-          color="primary"
+          onClick={() => navigate('/skills')}
+          variant="outlined"
+          sx={{
+            // Initial text color
+            borderColor: '#ff5722', // Initial border color
+            backgroundColor: '#ff5722', // Ensure it's transparent initially
+            color: '#fff',
+            '&:hover': {
+              backgroundColor: '#d84315', // Fill color on hover
+              color: '#fff', // Text color on hover\
+              borderColor: '#d84315',
+            },
+          }}
         >
           Resume
         </MyButton>

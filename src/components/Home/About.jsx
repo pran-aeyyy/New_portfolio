@@ -46,9 +46,9 @@ export default function About() {
       >
         <h1 className="text-3xl mb-4 font-bold">About</h1>
         <p className="text-lg">
-          Hello! {`I'm`} a full stack web developer and a CS student. I make
-          websites and apps with various technologies and frameworks. Check out
-          my portfolio for my work samples and contact details. Cheers!
+          Hello! {`I'm`} a full stack AI/ML developer. I make AI agents and
+          application with various technologies and frameworks. Check out my
+          portfolio for my work samples and contact details. Cheers!
         </p>
         <h3 className="text-2xl font-bold mt-4">My Favourite Quote</h3>
         <div className=" mx-auto max-w-[500px]">
@@ -62,9 +62,19 @@ export default function About() {
         </div>
         <div className="w-full flex justify-center mt-8">
           <Button
-            onClick={() => navigate('/about')}
+            onClick={() => navigate('/skills')}
             variant="outlined"
-            color="primary"
+            sx={{
+              // Initial text color
+              borderColor: '#ff5722', // Initial border color
+              backgroundColor: '#ff5722', // Ensure it's transparent initially
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: '#d84315', // Fill color on hover
+                color: '#fff', // Text color on hover\
+                borderColor: '#d84315',
+              },
+            }}
           >
             See more
           </Button>

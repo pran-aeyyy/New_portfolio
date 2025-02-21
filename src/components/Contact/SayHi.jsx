@@ -43,7 +43,7 @@ export default function SayHi() {
               <img src={profileLink} className="max-w-[150px] w-full" alt="" />
               <Typography variant="p">
                 <Link
-                  to="https://www.linkedin.com/in/iambijoykar/"
+                  to="https://www.linkedin.com/in/pranay-gupta-45128721b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-700 font-bold"

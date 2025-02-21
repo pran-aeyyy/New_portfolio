@@ -19,16 +19,16 @@ export default function Exp() {
 
   const steps = [
     {
-      label: 'Internshala Student Partner',
-      time: 'December 2022 - February 2023',
+      label: 'Tech Team Head @ STeRG',
+      time: 'Aug 2022 -  April 2024',
       description:
-        'It was a remote internship. My main work was to promoting courses through social media, I learned about Social Media Marketing and Sales.',
+        'I was a Tech Team head of a Space Technology and Research Group at MIT-WPU. Under my tenure we collaborated with ISRO to launch a payload into the space. ',
     },
     {
-      label: 'Web Developer Intern at Skygoal',
-      time: 'March 2023 - June 2023',
+      label: 'Associate AI/ML Developer @ Cynapto Technologies',
+      time: 'June 2024 - Dec 2024',
       description:
-        'Worked as a Front-end developer for 3 months. Mainly used React, Tailwindcss, Bootstrap for development. Learned about Real World Work Experience, Discipline Advance React , Communication Skills etc. It was a remote internship.',
+        'Developed and deployed a Computer Vision model for TVS Motor Company as part of a collaborative team effort. Gained hands-on experience with YOLOv7, Computer Vision, and Deep Learning models, enhancing expertise in real-world AI applications. ',
     },
   ]
 
@@ -78,33 +78,39 @@ export default function Exp() {
           color: colorTheme.primaryText,
         }}
       >
-        <h1 className="text-3xl text-center mb-4 font-bold">Experience</h1>
+        <h1 className="text-4xl text-center mb-4 font-bold">Experience</h1>
         <Box sx={{ maxWidth: 500 }}>
           <Stepper activeStep={activeStep} orientation="vertical">
             {steps.map((step, index) => (
               <Step key={step.label}>
                 <StepLabel
+                  sx={{
+                    '& .MuiStepLabel-label': {
+                      fontSize: '1.2rem', // Increase font size
+                      fontWeight: 'bold', // Make it bold if needed
+                      color: colorTheme.primaryText, // Apply theme color
+                    },
+                  }}
                   optional={
                     index === 2 ? (
                       <Typography
-                        sx={{ color: colorTheme.primaryText }}
-                        variant="caption"
+                        sx={{
+                          color: colorTheme.primaryText,
+                          fontSize: '1.2rem',
+                        }}
+                        variant="body1"
                       >
                         Last step
                       </Typography>
                     ) : null
                   }
                 >
-                  <Typography
-                    sx={{ color: colorTheme.primaryText }}
-                    variant="caption"
-                  >
-                    {step.label}
-                  </Typography>
+                  {step.label}
                 </StepLabel>
+
                 <StepContent>
                   <Typography
-                    sx={{ color: colorTheme.primaryText, fontWeight: 'bold' }}
+                    sx={{ color: colorTheme.primaryText }}
                     variant="h6"
                     component={'div'}
                     className="mb-2"
@@ -151,9 +157,19 @@ export default function Exp() {
         </Box>
         <div className="w-full flex justify-center mt-8">
           <Button
-            onClick={() => navigate('/experience')}
+            onClick={() => navigate('/skills')}
             variant="outlined"
-            color="primary"
+            sx={{
+              // Initial text color
+              borderColor: '#ff5722', // Initial border color
+              backgroundColor: '#ff5722', // Ensure it's transparent initially
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: '#d84315', // Fill color on hover
+                color: '#fff', // Text color on hover\
+                borderColor: '#d84315',
+              },
+            }}
           >
             See more
           </Button>

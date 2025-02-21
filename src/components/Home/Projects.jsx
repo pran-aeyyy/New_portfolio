@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import { useInView, useAnimate } from 'framer-motion'
 import { useSelector } from 'react-redux'
 import ProjectCard from './ProjectCard'
-import jsonIcon from '../../assets/jsondb.jpg'
+import blogImg from '../../assets/blog.png'
 import xCodeImg from '../../assets/x-code.png'
-import floatingHippoImg from '../../assets/Floating-hippo2.png'
+import car from '../../assets/car.png'
 import { Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 
@@ -50,16 +50,16 @@ export default function Projects() {
         <h1 className="text-3xl mb-4 font-bold">Projects</h1>
         <div className="flex flex-col items-center justify-center lg:flex-row gap-4">
           <ProjectCard
-            title="Floating Hippo"
-            description="Floating Hippo is a easy to use python 2D simulation library."
-            image={floatingHippoImg}
-            link="https://github.com/iamBijoyKar/floating_hippo"
+            title="Blog Generator using LLama2"
+            description="A simple Multi-AI AGENT bot that can help you write blogs on your favourite topics within your desired word limit."
+            image={blogImg}
+            link="https://github.com/pran-aeyyy/Blog-Generation-Llama2"
             delay={1}
           />
           <ProjectCard
-            title="JsonDb"
-            description="JsonDb is a open source project of a database cli app, made with json files. It is written in C++."
-            image={jsonIcon}
+            title="License Plate Recognition"
+            description="A Computer Vision based project built using YOLOv7 and OCR to read and save the number plates in the database."
+            image={car}
             link="https://github.com/iamBijoyKar/jsondb"
             delay={1.3}
           />
@@ -73,9 +73,19 @@ export default function Projects() {
         </div>
         <div className="w-full flex justify-center mt-4">
           <Button
-            onClick={() => navigate('projects')}
+            onClick={() => navigate('/skills')}
             variant="outlined"
-            color="primary"
+            sx={{
+              // Initial text color
+              borderColor: '#ff5722', // Initial border color
+              backgroundColor: '#ff5722', // Ensure it's transparent initially
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: '#d84315', // Fill color on hover
+                color: '#fff', // Text color on hover\
+                borderColor: '#d84315',
+              },
+            }}
           >
             See more
           </Button>

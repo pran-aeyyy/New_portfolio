@@ -11,8 +11,8 @@ import myBlogImg from '../../assets/my-blog.jpeg'
 import xCodeImg from '../../assets/x-code.png'
 import floatingHippoImg from '../../assets/Floating-hippo2.png'
 import bashScriptsImg from '../../assets/bash-shell-logo.jpg'
-import bioDropImg from '../../assets/bio-drop.png'
-import svelteKitTyperImg from '../../assets/svelte-kit-typer.png'
+import blogImg from '../../assets/blog.png'
+import carImg1 from '../../assets/car.png'
 
 export default function Projects() {
   const colorTheme = useSelector((state) => state.mode.colorTheme)
@@ -26,17 +26,17 @@ export default function Projects() {
       <h1 className="text-3xl text-center font-bold max-w-[800]">Projects</h1>
       <div className="flex flex-wrap justify-center items-center gap-4 mt-4">
         <ProjectCard
-          title="Bio Drop"
-          description="This is a simple web application that allows users to create and share their profile with others."
-          image={bioDropImg}
-          link="https://bio-drop.netlify.app/"
+          title="Blog Generator Using LLama2"
+          description="A simple Multi-AI AGENT bot that can help you write blogs on your favourite topics."
+          image={blogImg}
+          link="https://github.com/pran-aeyyy/Blog-Generator-Using-LLama2"
           delay={0.8}
         />
         <ProjectCard
-          title="SvelteKit Typer"
-          description="A simple typing practice web app built with Svelte Kit, Tailwind CSS and TypeScript."
-          image={svelteKitTyperImg}
-          link="https://svelte-kit-typer.netlify.app/"
+          title="License Plate Recognition using YoloV7"
+          description="A Computer Vision based project built using Yolov7 and OCR to read the number plates and save in a database."
+          image={carImg1}
+          link="https://github.com/pran-aeyyy/License_Plate_Recognition_YoloV7"
           delay={0.8}
         />
         <ProjectCard

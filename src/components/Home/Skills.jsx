@@ -2,9 +2,8 @@ import React, { useEffect } from 'react'
 import { useInView, useAnimate, motion } from 'framer-motion'
 import { useSelector } from 'react-redux'
 import reactIcon from '../../assets/react.svg'
-import reduxIcon from '../../assets/icons8-redux.svg'
+import opencvIcon from '../../assets/opencv.svg'
 import cIcon from '../../assets/icons8-c.svg'
-import htmlIcon from '../../assets/icons8-html.svg'
 import cssIcon from '../../assets/icons8-css.svg'
 import jsIcon from '../../assets/js_logo.svg'
 import nodeIcon from '../../assets/icons8-nodejs.svg'
@@ -12,9 +11,8 @@ import gitIcon from '../../assets/icons8-git.svg'
 import tailwindIcon from '../../assets/tailwindcss.svg'
 import flaskIcon from '../../assets/icons8-flask.svg'
 import pythonIcon from '../../assets/icons8-python.svg'
-import astroIconLight from '../../assets/astro-icon-light.svg'
-import astroIconDark from '../../assets/astro-icon-dark.svg'
-import nextJsIcon from '../../assets/icons8-nextjs.svg'
+import groqIcon from '../../assets/groq.svg'
+import langchainIcon from '../../assets/langchain.svg'
 import SkillCard from './SkillCard'
 import { Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
@@ -62,20 +60,16 @@ export default function Skills() {
       >
         <h1 className="text-3xl mb-4 font-bold">Skills</h1>
         <div className="flex flex-wrap gap-3 justify-center">
-          <SkillCard title={`NextJs`}>
+          <SkillCard title={`Python`}>
             <motion.img
               whileHover={{ scale: 1.2 }}
-              src={nextJsIcon}
+              src={pythonIcon}
               width={'60px'}
-              className="group"
-              style={{
-                filter: `drop-shadow(0px 0px 10px #${
-                  isDark ? 'dddddd35' : '00000055'
-                })`,
-              }}
+              style={{ filter: 'drop-shadow(0px 0px 10px #FD8D14A5)' }}
               alt=""
             />
           </SkillCard>
+
           <SkillCard title={`React`}>
             <motion.img
               animate={{ rotate: 360 }}
@@ -88,10 +82,11 @@ export default function Skills() {
             />
           </SkillCard>
 
-          <SkillCard title={`HTML`}>
+          <SkillCard title={`Langchain`}>
             <motion.img
+              animate={{ rotate: 360 }}
               whileHover={{ scale: 1.2 }}
-              src={htmlIcon}
+              src={langchainIcon}
               width={'60px'}
               style={{ filter: 'drop-shadow(0px 0px 10px #FD8D14A5)' }}
               alt=""
@@ -158,11 +153,11 @@ export default function Skills() {
             />
           </SkillCard>
 
-          <SkillCard title={`Redux`}>
+          <SkillCard title={`OpenCV`}>
             <motion.img
               animate={{ rotate: 360 }}
               transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
-              src={reduxIcon}
+              src={opencvIcon}
               style={{ filter: 'drop-shadow(0px 0px 10px #6F61C0A5)' }}
               width={'60px'}
               alt=""
@@ -189,10 +184,10 @@ export default function Skills() {
             />
           </SkillCard>
 
-          <SkillCard title={`Astro`}>
+          <SkillCard title={`Groq`}>
             <motion.img
               whileHover={{ scale: 1.2 }}
-              src={isDark ? astroIconLight : astroIconDark}
+              src={groqIcon}
               style={{
                 filter: `drop-shadow(0px 0px 10px ${
                   isDark ? '#ffffff55' : '#00000055'
@@ -207,7 +202,17 @@ export default function Skills() {
           <Button
             onClick={() => navigate('/skills')}
             variant="outlined"
-            color="primary"
+            sx={{
+              // Initial text color
+              borderColor: '#ff5722', // Initial border color
+              backgroundColor: '#ff5722', // Ensure it's transparent initially
+              color: '#fff',
+              '&:hover': {
+                backgroundColor: '#d84315', // Fill color on hover
+                color: '#fff', // Text color on hover\
+                borderColor: '#d84315',
+              },
+            }}
           >
             See more
           </Button>

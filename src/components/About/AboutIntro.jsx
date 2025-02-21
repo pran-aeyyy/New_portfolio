@@ -10,32 +10,26 @@ export default function AboutIntro() {
       }}
       className="text-center mt-4 max-w-[800px]"
     >
-      <h1 className="text-4xl font-bold">Hi, I am Bijoy Kar</h1>
+      <h1 className="text-4xl font-bold">Hi, I am Pranay Gupta</h1>
       <div className="mt-2">
         <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-          Developer
+          AI/ML Developer
         </span>{' '}
         | {` `}
         <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-          Student
+          Designer
         </span>{' '}
         | {` `}
         <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-          Leaner
-        </span>{' '}
-        | {` `}
-        <span className=" hover:text-[#FD8D14] font-bold cursor-pointer">
-          Tect Enthusiast
+          Tech Enthusiast
         </span>
       </div>
       <p className="text-xl mt-8">
-        Hi there! {`I'm`} a full stack web developer and a CS student who loves
-        to create awesome web applications. I am more confident in frontend than
-        backend, but I am still learing about databases and backend concepts. As
-        a developer I enjoy learning new technologies and solving challenging
-        problems. {`I'm`} always looking for opportunities to improve my skills
-        and work on exciting projects. You can check out some of my work on
-        GitHub or on my personal website. Thanks for stopping by!
+        I am a Full-Stack AI/ML Developer proficient in Python, Agentic
+        Frameworks, RAG Applications, Deep Learning, and Computer Vision. I have
+        a strong passion for building intelligent systems and leveraging AI to
+        solve real-world problems. Always eager to explore new technologies, I
+        strive to stay at the forefront of advancements in the AI/ML ecosystem.
       </p>
     </div>
   )

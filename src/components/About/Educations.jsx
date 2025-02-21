@@ -35,7 +35,7 @@ export default function Educations() {
         color: colorTheme.primaryText,
       }}
     >
-      <h1 className="text-center text-4xl font-bold">My Educations</h1>
+      <h1 className="text-center text-4xl font-bold">Education</h1>
       <Box
         sx={{
           maxWidth: '100%',
@@ -45,17 +45,14 @@ export default function Educations() {
         <Stepper activeStep={activeStep} orientation="vertical">
           <Step>
             <StepLabel className="">
-              <Typography
-                variant="caption"
-                sx={{ color: colorTheme.primaryText }}
-              >
-                Uttarpara Amarendra Vidyapith
+              <Typography sx={{ color: colorTheme.primaryText }}>
+                Allenhouse Public School -- Class 10th
               </Typography>
             </StepLabel>
             <StepContent>
               <p className="text-lg">
-                I passed my secondary examination from Uttarpara Amarendra
-                Vidyapith in 2019. I scored 88% in my secondary examination.
+                I passed my secondary examination from Allenhouse Public School
+                in 2019. I scored 96% in my secondary examination.
               </p>
               <Box sx={{ mb: 2 }}>
                 <div>
@@ -79,22 +76,15 @@ export default function Educations() {
           </Step>
           <Step>
             <StepLabel sx={{ color: colorTheme.primaryText }}>
-              <Typography
-                variant="caption"
-                sx={{ color: colorTheme.primaryText }}
-              >
-                Uttarpara Amarendra Vidyapith H.S{' '}
+              <Typography sx={{ color: colorTheme.primaryText }}>
+                Allenhouse Public School -- Class 12th
               </Typography>
             </StepLabel>
             <StepContent>
               <p className="text-lg">
-                I passed my higher secondary examination from Uttarpara
-                Amarendra Vidyapith in 2021. I scored 81% in my secondary
-                examination.
+                I passed my higher secondary examination from Allenhouse Public
+                School in 2021. I scored 91% in my secondary examination.
                 <br />
-                <br />I took science stream with Physics, Chemistry, Mathematics
-                and Computer Science as my subjects. I suided there for 2 years
-                ( 2019 - 2021 ).
               </p>
               <Box sx={{ mb: 2 }}>
                 <div>
@@ -118,17 +108,14 @@ export default function Educations() {
           </Step>
           <Step>
             <StepLabel sx={{ color: colorTheme.primaryText }}>
-              <Typography
-                variant="caption"
-                sx={{ color: colorTheme.primaryText }}
-              >
-                Swami Vivekananda University{' '}
+              <Typography sx={{ color: colorTheme.primaryText }}>
+                MIT-WPU, Pune -- ECE(AI/ML)
               </Typography>
             </StepLabel>
             <StepContent>
               <p className="text-lg">
-                Currently I am pursuing my B.Tech degree from Swami Vivekananda
-                University. I am in 3rd year of my B.Tech degree.
+                I am cuurently pursuing a Bachelors degree in Technology in the
+                field of AI-ML. I am currently in the last sem of my college.
               </p>
               <Box sx={{ mb: 2 }}>
                 <div>

@@ -24,15 +24,15 @@ export default function Resume() {
   const handleDownload = () => {
     if (selectedIndex === 0) {
       const a = document.createElement('a')
-      a.href = '/resume/Bijoy-Kar-Resume.pdf'
-      a.download = 'Bijoy-Kar-Resume.pdf'
+      a.href = '/resume/PranayGupta_resume.pdf'
+      a.download = 'Pranay-Gupta-Resume.pdf'
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
     } else {
       const a = document.createElement('a')
-      a.href = '/resume/Bijoy-Kar.png'
-      a.download = 'Bijoy-Kar-Resume.png'
+      a.href = '/resume/resumeImg.png'
+      a.download = 'Pranay-Gupta-Resume.png'
       document.body.appendChild(a)
       a.click()
       document.body.removeChild(a)
@@ -41,9 +41,9 @@ export default function Resume() {
 
   const handleView = () => {
     if (selectedIndex === 0) {
-      window.open('/resume/Bijoy-Kar-Resume.pdf', '_blank')
+      window.open('/resume/PranayGupta_resume.pdf', '_blank')
     } else {
-      window.open('/resume/Bijoy-Kar.png', '_blank')
+      window.open('', '_blank')
     }
   }
 
@@ -80,7 +80,7 @@ export default function Resume() {
                 boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.35)',
               }}
               className=""
-              src="/resume/Bijoy-Kar.png"
+              src="/resume/resumeImg.png"
               alt=""
             />
           </Suspense>
