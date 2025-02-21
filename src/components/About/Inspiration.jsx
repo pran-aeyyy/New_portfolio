@@ -13,30 +13,15 @@ export default function Inspiration() {
     >
       <h1 className="text-4xl font-bold text-center">Dreams & Inspiration</h1>
       <p className="text-center text-xl mt-8">
-        I am very interested in entrepreneurship and startups. I find the idea
-        of creating something new and innovative to be very exciting. I believe
-        that entrepreneurship is all about taking risks and being willing to
-        fail in order to succeed. I also think that startups are a great way to
-        create new jobs and help to drive economic growth. I am always looking
-        for new opportunities to learn more about entrepreneurship and startups,
-        and I hope to one day start my own business.
+        In my free time, I love indulging in activities that keep me active and
+        relaxed. One of my favorite pastimes is playing football—I enjoy the
+        teamwork, strategy, and adrenaline rush that comes with being on the
+        field. Music is another passion of mine; it helps me unwind and sets the
+        perfect mood after a long day. I also find swimming incredibly
+        refreshing, as it keeps me fit while allowing me to have fun. These
+        hobbies not only bring me joy but also help me maintain a balanced and
+        fulfilling lifestyle.
       </p>
-      <div className=" mx-auto max-w-[500px] my-4">
-        <p className="text-center text-xl">
-          Inspirational quotes can be a great way to motivate yourself and
-          others.
-        </p>
-        <h3 className="text-2xl text-center font-bold mt-4">
-          My Favourite Quote
-        </h3>
-        <p className="text-lg text-center mt-4 ">
-          <BiSolidQuoteAltLeft className="inline-block text-2xl relative top-[-.5rem]" />{' '}
-          You can never cross the ocean until you have the courage to lose sight
-          of the shore.{' '}
-          <BiSolidQuoteAltRight className="inline-block text-2xl relative bottom-[.5rem]" />
-        </p>
-        <p className="text-lg mt-2 text-end">–Christopher Columbus</p>
-      </div>
     </div>
   )
 }

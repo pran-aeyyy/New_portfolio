@@ -49,6 +49,7 @@ export default function Skills() {
     <div
       className=" w-full h-screen flex flex-col items-center justify-center text-center gap-4 lg:gap-8 max-w-[600px]"
       id="skills"
+      style={{ fontFamily: 'Pacifico, cursive' }}
     >
       <div
         ref={aboutRef}
@@ -58,7 +59,12 @@ export default function Skills() {
           color: colorTheme.primaryText,
         }}
       >
-        <h1 className="text-3xl mb-4 font-bold">Skills</h1>
+        <h1
+          className="text-3xl mb-4 font-bold"
+          style={{ fontFamily: 'Pacifico, cursive' }}
+        >
+          Skills
+        </h1>
         <div className="flex flex-wrap gap-3 justify-center">
           <SkillCard title={`Python`}>
             <motion.img

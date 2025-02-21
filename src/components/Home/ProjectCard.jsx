@@ -47,6 +47,7 @@ export default function ProjectCard({
             boxShadow: `0 0 10px ${theme ? '#000000' : '#dddddd'}`,
             backgroundColor: colorTheme.secondaryBg,
             color: colorTheme.primaryText,
+            fontFamily: 'Pacifico, cursive',
           }}
         >
           <CardActionArea>

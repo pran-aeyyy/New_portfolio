@@ -6,7 +6,6 @@ import ContactCard from './ContactCard'
 import linkedInIcon from '../../assets/icons8-linkedin.svg'
 import githubIcon from '../../assets/icons8-github.svg'
 import { useNavigate } from 'react-router-dom'
-import HireMe from './HireMe'
 
 export default function Contact() {
   const colorTheme = useSelector((state) => state.mode.colorTheme)
@@ -43,7 +42,7 @@ export default function Contact() {
         ref={aboutRef}
         className=""
         style={{
-          fontFamily: 'Borel, sans-serif',
+          fontFamily: 'Pacifico, cursive',
           color: colorTheme.primaryText,
         }}
       >
@@ -63,7 +62,7 @@ export default function Contact() {
         </div>
         <div className="w-full flex justify-center mt-4">
           <Button
-            onClick={() => navigate('/skills')}
+            onClick={() => navigate('/Contact')}
             variant="outlined"
             sx={{
               // Initial text color

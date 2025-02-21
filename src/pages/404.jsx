@@ -10,7 +10,7 @@ export default function Page404() {
   const [count, setCount] = useState(10)
   const location = useLocation()
   const navigate = useNavigate()
-  const [currentPath, setCurrentPath] = useState(location.pathname)
+  const [currentPath] = useState(location.pathname)
 
   useEffect(() => {
     const interval = setInterval(() => {

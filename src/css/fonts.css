@@ -10,3 +10,11 @@
   font-family: 'Borel', sans-serif;
   src: url('./../fonts/Borel/Borel-Regular.ttf');
 }
+@font-face {
+  font-family: 'Pacifico', cursive;
+  src: url('./../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+@font-face {
+  font-family: 'Sigmar', cursive;
+  src: url('./../fonts/Sigmar/Sigmar-Regular.ttf');
+}

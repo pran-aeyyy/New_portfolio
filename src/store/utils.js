@@ -22,7 +22,7 @@ export function setMode(mode) {
 }
 
 const darkTheme = {
-  primaryBg: '#518a6e',
+  primaryBg: '#beef00', //'#518a6e',
   secondaryBg: '#602e99',
   primaryText: '#050205',
   secondaryText: '#e1e1e1',

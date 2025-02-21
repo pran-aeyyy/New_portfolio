@@ -29,9 +29,20 @@ export default function Skills() {
   const isDark = useSelector((state) => state.mode.darkMode)
 
   return (
-    <div style={{ color: colorTheme.primaryText }} className="my-8">
-      <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl text-center font-bold mt-8">Frontend</h1>
+    <div
+      style={{ color: colorTheme.primaryText, fontFamily: 'Pacifico, cursive' }}
+      className="my-8"
+    >
+      <div
+        className="flex flex-col items-center justify-center gap-4"
+        style={{ fontFamily: 'Pacifico, cursive' }}
+      >
+        <h1
+          className="text-2xl text-center font-bold mt-8"
+          style={{ fontFamily: 'Pacifico, cursive' }}
+        >
+          Frontend
+        </h1>
         <div className="flex flex-wrap gap-3 justify-center max-w-[800px]">
           <SkillCard title={`NextJs`}>
             <motion.img
@@ -136,7 +147,12 @@ export default function Skills() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl text-center font-bold mt-8">Backend</h1>
+        <h1
+          className="text-2xl text-center font-bold mt-8"
+          style={{ fontFamily: 'Pacifico, cursive' }}
+        >
+          Backend
+        </h1>
         <div className="flex flex-wrap gap-3 justify-center max-w-[800px]">
           <SkillCard title={`Fastapi`}>
             <motion.img
@@ -170,7 +186,12 @@ export default function Skills() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl text-center font-bold mt-8">Version Control</h1>
+        <h1
+          className="text-2xl text-center font-bold mt-8"
+          style={{ fontFamily: 'Pacifico, cursive' }}
+        >
+          Version Control
+        </h1>
         <div className="flex flex-wrap gap-3 justify-center max-w-[800px]">
           <SkillCard title={`Git`}>
             <motion.img
@@ -204,7 +225,12 @@ export default function Skills() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl text-center font-bold mt-8">Languages</h1>
+        <h1
+          className="text-2xl text-center font-bold mt-8"
+          style={{ fontFamily: 'Pacifico, cursive' }}
+        >
+          Languages
+        </h1>
         <div className="flex flex-wrap gap-3 justify-center max-w-[800px]">
           <SkillCard title={`JavaScript`}>
             <motion.img

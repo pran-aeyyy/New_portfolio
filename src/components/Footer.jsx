@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 export default function Footer() {
   const colorTheme = useSelector((state) => state.mode.colorTheme)

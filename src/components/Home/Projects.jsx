@@ -3,7 +3,7 @@ import { useInView, useAnimate } from 'framer-motion'
 import { useSelector } from 'react-redux'
 import ProjectCard from './ProjectCard'
 import blogImg from '../../assets/blog.png'
-import xCodeImg from '../../assets/x-code.png'
+import videoSum from '../../assets/videoSum.png'
 import car from '../../assets/car.png'
 import { Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
@@ -16,7 +16,6 @@ export default function Projects() {
 
   useEffect(() => {
     if (isInView) {
-      //   console.log('in view')
       animate(
         aboutRef.current,
         {
@@ -29,25 +28,29 @@ export default function Projects() {
         },
       )
     } else {
-      //   console.log('not in view')
       animate(aboutRef.current, { opacity: 0, x: 100 })
     }
   }, [isInView])
 
   return (
     <div
-      className=" w-full min-h-screen flex flex-col items-center justify-center text-center gap-4 lg:gap-8 "
+      className="w-full min-h-screen flex flex-col items-center justify-center text-center gap-4 lg:gap-8"
       id="projects"
     >
       <div
         ref={aboutRef}
         className=""
         style={{
-          fontFamily: 'Borel, sans-serif',
+          fontFamily: 'Pacifico, cursive',
           color: colorTheme.primaryText,
         }}
       >
-        <h1 className="text-3xl mb-4 font-bold">Projects</h1>
+        <h1
+          className="text-3xl mb-4 font-bold"
+          style={{ fontFamily: 'Pacifico, cursive' }}
+        >
+          Projects
+        </h1>
         <div className="flex flex-col items-center justify-center lg:flex-row gap-4">
           <ProjectCard
             title="Blog Generator using LLama2"
@@ -64,25 +67,25 @@ export default function Projects() {
             delay={1.3}
           />
           <ProjectCard
-            title="X Code"
-            description="X Code is a Visual Code Editor made with Tauri and React. It is inspired by Visual Studio Code."
-            image={xCodeImg}
-            link="https://github.com/iamBijoyKar/x-code"
+            title="Video Summariser Multi Agent Bot"
+            description="🚀 AI-powered video analysis tool that extracts insights and summaries from uploaded videos using Google Gemini AI and Phidata Agents."
+            image={videoSum}
+            link="https://github.com/pran-aeyyy/Video_Summariser_Agent"
             delay={1.6}
           />
         </div>
         <div className="w-full flex justify-center mt-4">
           <Button
-            onClick={() => navigate('/skills')}
+            onClick={() => navigate('/projects')}
             variant="outlined"
             sx={{
-              // Initial text color
-              borderColor: '#ff5722', // Initial border color
-              backgroundColor: '#ff5722', // Ensure it's transparent initially
+              fontFamily: 'Pacifico, cursive', // Font applied to the button
+              borderColor: '#ff5722',
+              backgroundColor: '#ff5722',
               color: '#fff',
               '&:hover': {
-                backgroundColor: '#d84315', // Fill color on hover
-                color: '#fff', // Text color on hover\
+                backgroundColor: '#d84315',
+                color: '#fff',
                 borderColor: '#d84315',
               },
             }}

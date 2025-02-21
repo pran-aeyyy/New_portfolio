@@ -10,9 +10,17 @@ export default function SkillsIntro() {
       }}
       className="flex flex-col justify-center items-center gap-4 max-w-[600px] w-full"
     >
-      <h1 className="text-center text-4xl font-bold">My Skills</h1>
+      <h1
+        className="text-center text-4xl font-bold"
+        style={{ fontFamily: 'Pacifico, cursive' }}
+      >
+        My Skills
+      </h1>
 
-      <p className="text-center text-xl">
+      <p
+        className="text-center text-xl"
+        style={{ fontFamily: 'Pacifico, cursive' }}
+      >
         I have worked with a range of technologies in the web development world.
         From Back-end To Frontend.
       </p>

@@ -20,7 +20,10 @@ export default function SkillCard({ children, title }) {
       >
         <div
           className="p-4 w-[108px] h-[110px] rounded flex flex-col items-center justify-start gap-2 relative cursor-pointer shadow-lg"
-          style={{ backgroundColor: colorTheme.secondaryBg }}
+          style={{
+            backgroundColor: colorTheme.secondaryBg,
+            fontFamily: 'Pacifico, cursive',
+          }}
         >
           {children}
           <span

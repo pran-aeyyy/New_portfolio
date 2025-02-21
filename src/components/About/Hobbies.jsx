@@ -16,14 +16,14 @@ export default function Hobbies() {
       <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-5 ">
         <div className="">
           <p className="text-xl lg:text-start ">
-            I have a few hobbies that I enjoy doing in my free time. One of my
-            favorite hobbies is playing football. I love the feeling of being on
-            the field and working together with my teammates to achieve a common
-            goal. Another hobby that I enjoy is listening to music. I find that
-            music can be very relaxing and it helps me to unwind after a long
-            day. Finally, I also enjoy swimming. It’s a great way to stay active
-            and healthy while also having fun. These are just a few of the
-            hobbies that I enjoy doing in my free time.
+            In my free time, I love indulging in activities that keep me active
+            and relaxed. One of my favorite pastimes is playing football—I enjoy
+            the teamwork, strategy, and adrenaline rush that comes with being on
+            the field. Music is another passion of mine; it helps me unwind and
+            sets the perfect mood after a long day. I also find swimming
+            incredibly refreshing, as it keeps me fit while allowing me to have
+            fun. These hobbies not only bring me joy but also help me maintain a
+            balanced and fulfilling lifestyle
           </p>
         </div>
         <ImageList>

@@ -70,6 +70,7 @@ export default function Resume() {
         <div
           style={{
             color: colorTheme.primaryText,
+            fontFamily: 'Pacifico, cursive',
           }}
           className="max-w-[800px] flex flex-col items-center justify-center w-full p-4 "
         >

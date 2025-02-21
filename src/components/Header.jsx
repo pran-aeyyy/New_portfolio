@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button, IconButton } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { MdDarkMode, MdSunny } from 'react-icons/md'
@@ -7,97 +7,72 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useLocation, useNavigate, Link } from 'react-router-dom'
 import Confetti from 'react-confetti'
 
-// color theme
-
 export default function Header() {
   const location = useLocation()
   const isHome = location.pathname === '/'
   const navigate = useNavigate()
 
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY)
+  const [visible, setVisible] = useState(true)
+
   const MyButton = styled(Button)({
     textTransform: 'capitalize',
-    // backgroundColor: colorTheme.primaryBlue,
   })
+
   const theme = useSelector((state) => state.mode.darkMode)
   const colorTheme = useSelector((state) => state.mode.colorTheme)
   const confetti = useSelector((state) => state.confetti.confetti)
   const dispatch = useDispatch()
 
   const toggleTheme = () => {
-    console.log(theme)
     dispatch(modeActions.toggle())
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
+      setPrevScrollPos(currentScrollPos)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [prevScrollPos])
+
   return (
     <div
-      className="flex items-center justify-between w-full p-4 lg:px-[3rem] lg:py-[1rem] fixed top-0 left-0 z-50"
-      style={{ backgroundColor: colorTheme.primaryBg }}
+      className="flex items-center justify-between w-full p-4 lg:px-[3rem] lg:py-[1rem] fixed top-0 left-0 z-50 transition-transform duration-300"
+      style={{
+        backgroundColor: theme ? '#1400c6' : '#1400c6',
+        color: theme ? '#000000' : '#ffffff',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        transform: visible ? 'translateY(0)' : 'translateY(-100%)',
+      }}
     >
       {confetti && <Confetti />}
       <Link to="/">
         <h1
-          className="text-3xl font-bold uppercase"
-          style={{ color: colorTheme.primaryText }}
+          className="text-3xl font-bold uppercase font-mono"
+          style={{ fontFamily: 'Pacifico, cursive' }}
         >
           Pran.aeyyy
         </h1>
       </Link>
       {isHome && (
         <ul className="gap-5 items-center hidden lg:flex">
-          <li>
-            <a
-              href="#intro"
-              className="text-xl font-bold animate-underline"
-              style={{ color: colorTheme.primaryText }}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              className="text-xl font-bold animate-underline"
-              style={{ color: colorTheme.primaryText }}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              href="#skills"
-              className="text-xl font-bold animate-underline"
-              style={{ color: colorTheme.primaryText }}
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className="text-xl font-bold animate-underline"
-              style={{ color: colorTheme.primaryText }}
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="#experience"
-              className="text-xl font-bold animate-underline"
-              style={{ color: colorTheme.primaryText }}
-            >
-              Exp
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="text-xl font-bold animate-underline"
-              style={{ color: colorTheme.primaryText }}
-            >
-              Contact
-            </a>
-          </li>
+          {['Home', 'About', 'Skills', 'Projects', 'Exp', 'Contact'].map(
+            (item, index) => (
+              <li key={index}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="text-xl font-bold animate-underline"
+                  style={{ fontFamily: 'Pacifico, cursive' }}
+                >
+                  {item}
+                </a>
+              </li>
+            ),
+          )}
         </ul>
       )}
 
@@ -110,16 +85,15 @@ export default function Header() {
           )}
         </IconButton>
         <MyButton
-          onClick={() => navigate('/skills')}
+          onClick={() => navigate('/resume')}
           variant="outlined"
           sx={{
-            // Initial text color
-            borderColor: '#ff5722', // Initial border color
-            backgroundColor: '#ff5722', // Ensure it's transparent initially
+            borderColor: '#ff5722',
+            backgroundColor: '#ff5722',
             color: '#fff',
             '&:hover': {
-              backgroundColor: '#d84315', // Fill color on hover
-              color: '#fff', // Text color on hover\
+              backgroundColor: '#d84315',
+              color: '#fff',
               borderColor: '#d84315',
             },
           }}

@@ -13,12 +13,11 @@ ContactCard.propTypes = {
 ContactCard.defaultProps = {
   dropShadow: '0px 0px 10px #45CFDDA5',
   icon: '',
-  text: '@iamBijoyKar',
+  text: '@iamPranayGupta',
   link: '',
 }
 
 export default function ContactCard({ icon, text, dropShadow, link }) {
-  //   const darkMode = useSelector((state) => state.mode.darkMode)
   const colorTheme = useSelector((state) => state.mode.colorTheme)
   const handleClick = () => {
     setTimeout(() => {
@@ -46,7 +45,10 @@ export default function ContactCard({ icon, text, dropShadow, link }) {
             alt=""
           />
           <span
-            style={{ color: colorTheme.primaryText }}
+            style={{
+              fontFamily: 'Pacifico, cursive',
+              color: colorTheme.primaryText,
+            }}
             className="font-bold text-sm"
           >
             {text}

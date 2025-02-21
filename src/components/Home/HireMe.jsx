@@ -43,6 +43,7 @@ export default function HireMe() {
           backgroundColor: colorTheme.primaryText + '1A',
           padding: '1rem 2rem',
           border: '1px solid ' + colorTheme.primaryText,
+          fontFamily: 'Pacifico, cursive',
         }}
         size="large"
         className=" rounded-lg "

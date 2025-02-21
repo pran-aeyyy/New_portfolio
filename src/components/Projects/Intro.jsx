@@ -10,8 +10,16 @@ export default function Intro() {
       style={{ color: colorTheme.primaryText }}
       className="max-w-[800px] w-full mx-auto"
     >
-      <h1 className="text-4xl text-center font-bold">My Projects</h1>
-      <p className="text-center text-xl mt-4">
+      <h1
+        className="text-4xl text-center font-bold"
+        style={{ fontFamily: 'Pacifico, cursive' }}
+      >
+        My Projects
+      </h1>
+      <p
+        className="text-center text-xl mt-4"
+        style={{ fontFamily: 'Pacifico, cursive' }}
+      >
         Hi, {`I'm`} Pranay Gupta and I love making projects and solving real
         world problems. I enjoy learning new skills and technologies, and
         applying them to create cool and useful solutions. You can check them

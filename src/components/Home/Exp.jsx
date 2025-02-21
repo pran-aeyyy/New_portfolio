@@ -74,7 +74,7 @@ export default function Exp() {
         ref={aboutRef}
         className=""
         style={{
-          fontFamily: 'Borel, sans-serif',
+          fontFamily: 'Pacifico, cursive',
           color: colorTheme.primaryText,
         }}
       >
@@ -89,6 +89,7 @@ export default function Exp() {
                       fontSize: '1.2rem', // Increase font size
                       fontWeight: 'bold', // Make it bold if needed
                       color: colorTheme.primaryText, // Apply theme color
+                      fontFamily: 'Pacifico, cursive',
                     },
                   }}
                   optional={
@@ -97,6 +98,7 @@ export default function Exp() {
                         sx={{
                           color: colorTheme.primaryText,
                           fontSize: '1.2rem',
+                          fontFamily: 'Pacifico, cursive',
                         }}
                         variant="body1"
                       >
@@ -110,7 +112,10 @@ export default function Exp() {
 
                 <StepContent>
                   <Typography
-                    sx={{ color: colorTheme.primaryText }}
+                    sx={{
+                      color: colorTheme.primaryText,
+                      fontFamily: 'Pacifico, cursive',
+                    }}
                     variant="h6"
                     component={'div'}
                     className="mb-2"
@@ -157,13 +162,14 @@ export default function Exp() {
         </Box>
         <div className="w-full flex justify-center mt-8">
           <Button
-            onClick={() => navigate('/skills')}
+            onClick={() => navigate('/Experience')}
             variant="outlined"
             sx={{
               // Initial text color
               borderColor: '#ff5722', // Initial border color
               backgroundColor: '#ff5722', // Ensure it's transparent initially
               color: '#fff',
+              fontFamily: 'Pacifico, cursive',
               '&:hover': {
                 backgroundColor: '#d84315', // Fill color on hover
                 color: '#fff', // Text color on hover\
