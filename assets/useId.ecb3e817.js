@@ -1,0 +1,1 @@
+import{r as u,e as c}from"./index.adaee8f0.js";let n=0;function l(t){const[e,o]=u.exports.useState(t),a=t||e;return u.exports.useEffect(()=>{e==null&&(n+=1,o(`mui-${n}`))},[e]),a}const s=c["useId".toString()];function r(t){if(s!==void 0){const e=s();return t!=null?t:e}return l(t)}export{r as u};
