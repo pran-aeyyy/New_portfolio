@@ -39,7 +39,7 @@ export default function About() {
         ref={aboutRef}
         className=""
         style={{
-          fontFamily: 'Pacifico, cursive',
+          fontFamily: 'Pacifico, sans-serif',
           color: colorTheme.primaryText,
         }}
       >
