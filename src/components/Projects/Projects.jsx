@@ -43,13 +43,6 @@ export default function Projects() {
           link="https://github.com/pran-aeyyy/Video_Summariser_Agent"
           delay={0.8}
         />
-        <ProjectCard
-          title="JsonDb"
-          description="JsonDb is a open source project of a database cli app, made with json files. It is written in C++."
-          image={jsonIcon}
-          link="https://github.com/iamBijoyKar/jsondb"
-          delay={0.4}
-        />
       </div>
     </div>
   )

@@ -73,7 +73,12 @@ export default function Resume() {
           }}
           className="max-w-[800px] flex flex-col items-center justify-center w-full p-4 "
         >
-          <h1 className="text-4xl font-bold text-center mb-4">My Resume</h1>
+          <h1
+            className="text-4xl font-bold text-center mb-4"
+            style={{ fontFamily: 'Pacifico, cursive' }}
+          >
+            My Resume
+          </h1>
           <Suspense fallback={<CompLoader />}>
             <img
               style={{

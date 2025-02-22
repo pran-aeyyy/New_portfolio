@@ -213,6 +213,7 @@ export default function Skills() {
               borderColor: '#ff5722', // Initial border color
               backgroundColor: '#ff5722', // Ensure it's transparent initially
               color: '#fff',
+              fontFamily: 'Pacifico, cursive',
               '&:hover': {
                 backgroundColor: '#d84315', // Fill color on hover
                 color: '#fff', // Text color on hover\

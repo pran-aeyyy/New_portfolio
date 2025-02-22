@@ -19,12 +19,12 @@ body {
   width: 10px;
 } */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #240387;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #b80c0c;
   width: 10px;
 }

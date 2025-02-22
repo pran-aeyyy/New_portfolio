@@ -91,6 +91,7 @@ export default function Header() {
             borderColor: '#ff5722',
             backgroundColor: '#ff5722',
             color: '#fff',
+            fontFamily: 'Pacifico, cursive',
             '&:hover': {
               backgroundColor: '#d84315',
               color: '#fff',

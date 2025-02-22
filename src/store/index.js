@@ -45,7 +45,7 @@ const modeSlice = createSlice({
       )
       document.getElementById('favicon').href = state.darkMode
         ? '/tab-logo/pg.png'
-        : '/tab-logo/pg.png'
+        : '/tab-logo/pg1.png'
     },
   },
 })

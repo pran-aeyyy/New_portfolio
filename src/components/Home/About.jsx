@@ -39,7 +39,7 @@ export default function About() {
         ref={aboutRef}
         className=""
         style={{
-          fontFamily: 'Pacifico, sans-serif',
+          fontFamily: 'Pacifico, cursive',
           color: colorTheme.primaryText,
         }}
       >
@@ -62,6 +62,7 @@ export default function About() {
               borderColor: '#ff5722', // Initial border color
               backgroundColor: '#ff5722', // Ensure it's transparent initially
               color: '#fff',
+              fontFamily: 'Pacifico, cursive',
               '&:hover': {
                 backgroundColor: '#d84315', // Fill color on hover
                 color: '#fff', // Text color on hover\

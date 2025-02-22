@@ -11,8 +11,10 @@
   src: url('./../fonts/Borel/Borel-Regular.ttf');
 }
 @font-face {
-  font-family: 'Pacifico', cursive;
-  src: url('./../fonts/Pacifico/Pacifico-Regular.ttf');
+  font-family: 'Pacifico';
+  src: url('./../fonts/Pacifico/Pacifico-Regular.ttf') format ('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Sigmar', cursive;

@@ -42,7 +42,7 @@ export default function Contact() {
         ref={aboutRef}
         className=""
         style={{
-          fontFamily: 'Pacifico, cursive',
+          fontFamily: 'Pacifico, ',
           color: colorTheme.primaryText,
         }}
       >
@@ -69,6 +69,7 @@ export default function Contact() {
               borderColor: '#ff5722', // Initial border color
               backgroundColor: '#ff5722', // Ensure it's transparent initially
               color: '#fff',
+              fontFamily: 'Pacifico, cursive',
               '&:hover': {
                 backgroundColor: '#d84315', // Fill color on hover
                 color: '#fff', // Text color on hover\
