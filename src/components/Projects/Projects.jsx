@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import ProjectCard from '../Home/ProjectCard'
-import jsonIcon from '../../assets/jsondb.jpg'
 import videoSum from '../../assets/videoSum.png'
 import blogImg from '../../assets/blog.png'
 import carImg1 from '../../assets/car.png'

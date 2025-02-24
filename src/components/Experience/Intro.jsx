@@ -6,7 +6,11 @@ export default function Intro() {
   const colorTheme = useSelector((state) => state.mode.colorTheme)
   return (
     <div className="" style={{ color: colorTheme.primaryText }}>
-      <Typography variant="h3" className="font-bold text-center">
+      <Typography
+        variant="h3"
+        className="font-bold text-center"
+        sx={{ fontFamily: '"Pacifico", cursive' }}
+      >
         Experiences
       </Typography>
     </div>

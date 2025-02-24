@@ -1,86 +1,72 @@
-import React, { useState, lazy } from 'react'
-import { Tab, Tabs, Typography, Chip } from '@mui/material'
+import React, { useState } from 'react'
+import { Typography, Chip } from '@mui/material'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { FaReact } from 'react-icons/fa'
-import { MdShoppingCart } from 'react-icons/md'
-import { FaCircleDollarToSlot } from 'react-icons/fa6'
-import { BiLogoTailwindCss, BiLogoRedux } from 'react-icons/bi'
+import { GrUserManager } from 'react-icons/gr'
+import { FaPython } from 'react-icons/fa'
+import { GiSatelliteCommunication } from 'react-icons/gi'
+import { GiArtificialIntelligence } from 'react-icons/gi'
+import { SiOpencv } from 'react-icons/si'
 import {
   PiNumberCircleOneBold,
   PiNumberCircleTwoBold,
   PiNumberCircleThreeBold,
 } from 'react-icons/pi'
 import ExpMedia from './ExpMedia'
-import skygoalOfferLetter from '../../assets/skygoal-offer-letter.jpg'
-import skygoalCompleteLetter from '../../assets/skygoal-complete-letter.jpg'
-import ispOfferLetter from '../../assets/isp-offer-letter.jpg'
-import ispCompleteLetter from '../../assets/isp-complete-letter.jpg'
+import cynaptoOfferLetter from '../../assets/cynapto_offer.png'
+import cynaptoCompleteLetter from '../../assets/cynapto_complete.png'
 
 export default function Experiences() {
-  const [page, setPage] = useState(0)
   const expMediaData1 = [
     {
-      img: skygoalOfferLetter,
-      title: 'SkyGoal® Inc Offer Letter',
-      description: 'Offer Letter for Web Development Intern',
+      img: cynaptoOfferLetter,
+      title: 'Cynapto Technologies Pvt. Ltd. Offer Letter',
+      description: 'Offer Letter for AI Intern Position',
     },
     {
-      img: skygoalCompleteLetter,
-      title: 'SkyGoal® Inc Complete Letter',
-      description: 'Complete Letter for Web Development Intern',
+      img: cynaptoCompleteLetter,
+      title: 'Cynapto Technologies Pvt. Ltd. Complete Letter',
+      description: 'Complete Letter',
     },
   ]
-  const expMediaData2 = [
-    {
-      img: ispOfferLetter,
-      title: 'ISP Offer Letter',
-      description: 'Offer Letter for Internshala Student Partner',
-    },
-    {
-      img: ispCompleteLetter,
-      title: 'ISP Complete Letter',
-      description: 'Complete Letter for Internshala Student Partner',
-    },
-  ]
+
   const colorTheme = useSelector((state) => state.mode.colorTheme)
 
   return (
-    <div className="mt-8" style={{ color: colorTheme.primaryText }}>
+    <div className="mt-8" style={{ fontFamily: 'Pacifico, cursive' }}>
       <div className="my-4">
         <ExpContainer
           icon={<PiNumberCircleOneBold className="text-3xl" />}
           index={0}
         >
-          <Typography variant="h4" className="font-bold text-center">
-            Internshala Student Partner
+          <Typography
+            variant="h4"
+            className="font-bold text-center"
+            sx={{ fontFamily: '"Pacifico", cursive' }}
+          >
+            Tech Team Lead @STeRG
           </Typography>
           <Typography variant="h6" className="text-center mt-2">
-            Dec 2022 - Feb 2023 · 3 mos
+            Aug 2022 - April 2024 · 1 Year & 8 mos
           </Typography>
           <Typography variant="h6" className="text-center mt-2">
-            Company :{' '}
-            <Link to={''} className=" font-bold">
-              {' '}
-              Internshala{' '}
-            </Link>
-          </Typography>
-          <Typography variant="h6" className="text-center mt-2">
-            Location : <span className=" font-bold"> Remote </span>
+            Location : <span className=" font-bold"> MIT-WPU, Pune</span>
           </Typography>
           <Typography variant="h5" className="text-center mt-3">
             Skills{' '}
           </Typography>
           <div
             className="flex gap-3 justify-center flex-wrap my-2 max-w-[350px]"
-            style={{ color: colorTheme.primaryText }}
+            style={{
+              color: colorTheme.primaryText,
+            }}
           >
             <Chip
-              label="Marketing"
+              label="Team Management"
               style={{ color: colorTheme.primaryText }}
               onClick={() => null}
               icon={
-                <MdShoppingCart
+                <GrUserManager
                   className="text-xl "
                   style={{ color: colorTheme.primaryText }}
                 />
@@ -89,11 +75,11 @@ export default function Experiences() {
               variant=""
             />
             <Chip
-              label="Sales"
+              label="Sattelite Communication"
               style={{ color: colorTheme.primaryText }}
               onClick={() => null}
               icon={
-                <FaCircleDollarToSlot
+                <GiSatelliteCommunication
                   className="text-lg "
                   style={{ color: colorTheme.primaryText }}
                 />
@@ -102,28 +88,31 @@ export default function Experiences() {
               variant=""
             />
           </div>
-          <ExpMedia media={expMediaData2} />
         </ExpContainer>
 
         <ExpContainer
           icon={<PiNumberCircleTwoBold className="text-3xl" />}
           index={1}
         >
-          <Typography variant="h4" className="font-bold text-center">
-            Web Development Intern
+          <Typography
+            variant="h4"
+            className="font-bold text-center"
+            sx={{ fontFamily: '"Pacifico", cursive' }}
+          >
+            Associate AI/ML Developer
           </Typography>
           <Typography variant="h6" className="text-center mt-2">
-            Mar 2023 - Jun 2023 · 4 mos
+            June 2024 - Dec 2024 · 6 mos
           </Typography>
           <Typography variant="h6" className="text-center mt-2">
             Company :{' '}
             <Link to={''} className=" font-bold">
               {' '}
-              SkyGoal® Inc
+              Cynapto Technologies
             </Link>
           </Typography>
           <Typography variant="h6" className="text-center mt-2">
-            Location : <span className=" font-bold"> Remote </span>
+            Location : <span className=" font-bold"> Mumbai </span>
           </Typography>
           <Typography variant="h5" className="text-center mt-3">
             Skills{' '}
@@ -133,11 +122,11 @@ export default function Experiences() {
             style={{ color: colorTheme.primaryText }}
           >
             <Chip
-              label="React"
+              label="Python"
               style={{ color: colorTheme.primaryText }}
               onClick={() => null}
               icon={
-                <FaReact
+                <FaPython
                   className="text-xl "
                   style={{ color: colorTheme.primaryText }}
                 />
@@ -146,11 +135,11 @@ export default function Experiences() {
               variant=""
             />
             <Chip
-              label="Tailwindcss"
+              label="Artificial Intelligence"
               style={{ color: colorTheme.primaryText }}
               onClick={() => null}
               icon={
-                <BiLogoTailwindCss
+                <GiArtificialIntelligence
                   className="text-xl "
                   style={{ color: colorTheme.primaryText }}
                 />
@@ -159,11 +148,11 @@ export default function Experiences() {
               variant=""
             />
             <Chip
-              label="Redux"
+              label="OpenCV"
               style={{ color: colorTheme.primaryText }}
               onClick={() => null}
               icon={
-                <BiLogoRedux
+                <SiOpencv
                   className="text-xl "
                   style={{ color: colorTheme.primaryText }}
                 />

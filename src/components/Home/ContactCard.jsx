@@ -11,7 +11,7 @@ ContactCard.propTypes = {
 }
 
 ContactCard.defaultProps = {
-  dropShadow: '0px 0px 10px #45CFDD5',
+  dropShadow: '0px 0px 10px #45CFDDA5',
   icon: '',
   text: '@iamPranayGupta',
   link: '',
